@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Dariusz Jendryczka Portfolio</title>
-</head>
-<body>
-    <div class="logo"><img src="/images/extendify-demo-logo.png" alt="Logo circle with wawes" height="40"></div>
+  </head>
+  <body>
+    <div class="logo">
+      <img
+        src="/images/extendify-demo-logo.png"
+        alt="Logo circle with wawes"
+        height="40"
+      />
+    </div>
     <div class="sidebar">
-        <div class="nav-items">
-            <div class="menu-item">Menu</div>
-            <a href="#Home">Home</a></div>
-        <div class="nav-items"><a href="#About">About</a></div>
-        <div class="nav-items"><a href="#Projects">Projects</a></div>
-        <div class="nav-items"><a href="#Contact">Contact</a></div>
+      <div class="nav-items">
+        <button id="theme-toggle">Dark/Light</button>
+        <div class="menu-item">Menu</div>
+        <a href="#Home">Home</a>
+      </div>
+      <div class="nav-items"><a href="#About">About</a></div>
+      <div class="nav-items"><a href="#Projects">Projects</a></div>
+      <div class="nav-items"><a href="#Contact">Contact</a></div>
     </div>
     <div class="grid-scroll">
-        <div class="grid-item" id="Home">
-            <div class="grid-item-content">
-                <h1>Hi! Welcome to my portfolio.</h1>
-                <p>My name is Dariusz, and I’m learning to be a Front-End Developer.</p>
-            </div>
+      <div class="grid-item splash" id="Home">
+        <div class="grid-item-content">
+          <h1 class="splash-text">Hi! Welcome to my portfolio.</h1>
+          <p class="splash-p">
+            My name is Dariusz, and I’m learning to be a <span class="orange">Front-End</span> Developer.
+          </p>
         </div>
-        <div class="grid-item" id="About">Item 2</div>
-        <div class="grid-item" id="Projects">Item 3</div>
-        <div class="grid-item" id="Contact">Item 3</div>
-        <!-- More items as needed -->
       </div>
-      <script src="script.js"></script>
-</body>
+      <div class="grid-item" id="About">Item 2</div>
+      <div class="grid-item" id="Projects">Item 3</div>
+      <div class="grid-item" id="Contact">Item 3</div>
+      <!-- More items as needed -->
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

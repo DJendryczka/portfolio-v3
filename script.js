@@ -7,3 +7,8 @@ container.addEventListener('wheel', (event) => {
   // Scroll horizontally based on the vertical scroll amount
   container.scrollLeft += event.deltaY;
 });
+
+const themeToggle = document.getElementById('theme-toggle');
+themeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});
