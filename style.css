@@ -1,0 +1,70 @@
+/* Resetting body to remove default margin and overflow */
+body {
+    margin: 0;
+    overflow: hidden; /* Hide any overflow from the body */
+  }
+
+  /* Sidebar */
+
+  .logo {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    z-index: 1000;
+  }
+
+    .menu-item {
+        margin-left: 9rem;
+        transition: ease-in-out 0.3s;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -130px;
+        bottom: 0;
+        width: 190px;
+        background-color: transparent;
+        color: #403b3b;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 1rem;
+        transition: ease-in-out 0.3s;
+    }
+
+    .sidebar:hover {
+        left: 0;
+    }
+    .sidebar:hover .menu-item {
+      opacity: 0; /* Make items transparent */
+      visibility: hidden; /* Hide items */
+  }
+
+  .nav-items a {
+    text-decoration: none;
+    color: #403b3b;
+  }
+  
+  .grid-scroll {
+    display: grid;
+    grid-auto-flow: column; /* Lays out items in a horizontal row */
+    grid-auto-columns: 100vw; /* Each item takes the full viewport width */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    overflow-y: hidden; /* Prevents vertical scrolling */
+    width: 100vw; /* Full viewport width to avoid horizontal overflow on body */
+    height: 100vh; /* Full viewport height to avoid vertical overflow */
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory; /* Optional: snap scrolling for smooth transitions */
+  }
+  
+  .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-color: #e0e0e0;
+    height: 100vh; /* Ensures grid items fill the viewport height */
+    border-right: 1px solid #ccc; /* Optional separator between items */
+    flex-shrink: 0; /* Prevents shrinking of grid items */
+  }
